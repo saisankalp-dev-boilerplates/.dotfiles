@@ -1,7 +1,11 @@
 packages:
   darwin:
     brews:
-      - 'git'
-      - 'ghostty'
-    chasks:
-      - 'google-chrome'
+      - "git"
+      - "lazygit"
+      - "yazi"
+      - "tmux"
+      - "neovim"
+    casks:
+      - "ghostty"
+      - "obsidian"
