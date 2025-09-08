@@ -1,0 +1,11 @@
+
+# background
+background = #1D1116
+background-opacity = 0.5
+background-blur = false
+
+# foreground
+foreground = #ffffff
+
+# cursor
+cursor-color = #f94dff
