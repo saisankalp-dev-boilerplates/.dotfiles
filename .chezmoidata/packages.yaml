@@ -7,6 +7,7 @@ packages:
       - "yazi"
       - "tmux"
       - "neovim"
+      - "koekeishiya/formulae/yabai"
     casks:
       - "ghostty"
       - "obsidian"
