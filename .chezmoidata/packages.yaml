@@ -8,6 +8,7 @@ packages:
       - "tmux"
       - "neovim"
       - "koekeishiya/formulae/yabai"
+      - "tpm"
     casks:
       - "ghostty"
       - "obsidian"
