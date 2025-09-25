@@ -14,11 +14,10 @@ packages:
       - "obsidian"
       - "nikitabobko/tap/aerospace"
   linux:
-    rhel:
-      dnf:
-        - "git"
-        - "gh"
-        - "lazygit"
-        - "yazi"
-        - "tmux"
-        - "neovim"
+    brews:
+      - "git"
+      - "gh"
+      - "lazygit"
+      - "yazi"
+      - "tmux"
+      - "neovim"
