@@ -12,3 +12,13 @@ packages:
     casks:
       - "ghostty"
       - "obsidian"
+      - "nikitabobko/tap/aerospace"
+  linux:
+    rhel:
+      dnf:
+        - "git"
+        - "gh"
+        - "lazygit"
+        - "yazi"
+        - "tmux"
+        - "neovim"

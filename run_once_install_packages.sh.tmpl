@@ -1,0 +1,19 @@
+#!/bin/bash
+set -euo pipefail
+
+{{ if eq .chezmoi.os "darwin" -}}
+  echo "[chezmoi] Installing brew packages..."
+  brew install {{ range .packages.darwin.brews }}{{ . }} {{ end }}
+  brew install --cask {{ range .packages.darwin.casks }}{{ . }} {{ end }}
+{{ else if eq .chezmoi.osRelease.id "rhel" -}}
+  echo "[chezmoi] Installing dnf packages..."
+  sudo dnf install -y {{ range .packages.linux.rhel.dnf }}{{ . }} {{ end }}
+
+  # Cargo (for yazi)
+  if ! command -v cargo >/dev/null 2>&1; then
+    sudo dnf install -y rust cargo
+  fi
+  cargo install --locked yazi-fm yazi-cli
+{{ end -}}
+
+echo "[chezmoi] Packages installed."
